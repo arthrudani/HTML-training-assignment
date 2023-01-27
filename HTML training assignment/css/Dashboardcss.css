@@ -1,0 +1,532 @@
+/*****************************************DASHBOARD*****************************************/
+
+body{
+    background-color:#fafafa;
+    min-width: 100vh;
+}
+
+.main{
+    width: 1560px;
+    height: 1359px;
+    display: flex;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.headerbar{
+    position: fixed;
+    display: flex;
+    width: 1560px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.footer{
+    width: 1318px;
+    height: 1279px;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 0px;
+}
+
+.menubar-icon{
+    margin-top: 28px;
+    margin-left: 29px;
+    width: 18px;
+    height: 12px;
+    opacity: 1;
+}
+
+.company-icon{
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 142px;
+    height: 30px;
+    opacity: 1;
+}
+
+.search-icon{
+    margin-top: 31.67px;
+    margin-left: 76.67px;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+}
+
+.search-text{
+    margin-top: 28.47px;
+    margin-left: 14.75px;
+    font: normal normal normal 16px/21px Roboto;
+    color: #000000;
+    opacity: 1;
+}
+
+.notification-icon{
+    padding-top: 28.28px;
+    margin-left: 924.2px;
+    width: 22px;
+    height: 21px;
+    opacity: 1;
+}
+
+.profile-icon{
+    margin-top: 18px;
+    margin-left: 52.28px;
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+}
+
+.unametext{
+    margin-top: 28.47px;
+    margin-left: 12px;
+    width: 68px;
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.downarrow-icon{
+    margin-top: 30.5px;
+    margin-left: 14.54px;
+    width: 10px;
+    height: 6px;
+    opacity: 1;
+}
+
+.sidebar{
+    position: fixed;
+    margin-left: 0px;
+    width: 242px;
+    height: 1279px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.dashboard,
+.analysis, 
+.inbox, 
+.history,
+.user,
+.maintainace,
+.setting
+{
+    border: 0px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 30px;
+    width: 183px;
+    height: 43px    
+}
+
+.dashboard img,
+.analysis img, 
+.inbox img, 
+.history img,
+.user img,
+.maintainace img,
+.setting img
+{
+    width: 15px;
+    height: 15px;
+    margin-top: 14px;
+    margin-left: 17.5px;
+}
+
+.dashboard p,
+.analysis p, 
+.inbox p, 
+.history p,
+.user p,
+.maintainace p,
+.setting p
+{
+    margin-top: 12px;
+    margin-left: 12.5px;
+    margin-right: 60px;
+    font-size: 16px;
+    width: 78px;
+    height: 21px;
+    font: normal normal normal 15px/20px Roboto;
+}
+
+.dashboard{
+    background-color: #fff3f4;
+    margin-top: 25px;
+}
+.dashboard p{
+    color: #C8242F  
+}
+
+.innerdbtext .p{
+    margin-top: 40.75px;
+    margin-left: 48px;
+    color: #C8242F;
+}
+
+.innerpage{
+    width: 1318px;
+    height: 1359px;
+    margin-top: 0px;
+    margin-left: 242px;
+}
+
+.innerpage p{
+    margin-top: 40.75px;
+    margin-left: 48px;
+    font-size: 30px;
+    text-align: left;
+    font: normal normal normal 30px/39px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.boxes{
+    display: flex;
+}
+
+.innerpage .star
+{
+    display: flex;
+    margin-top: 22.25px;
+    margin-left: 50px;
+    width: 219.4px;
+    height: 116px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+.innerpage .add,
+.innerpage .tproduct,
+.innerpage .today,
+.innerpage .tsale
+{
+    display: flex;
+    margin-top: 22.25px;
+    margin-left: 30px;
+    width: 219.4px;
+    height: 116px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+
+.star img,
+.add img, 
+.tproduct img,
+.today img,
+.tsale img
+{
+    width: 33px;
+    height: 33px;
+    margin-top: 41.33px;
+    margin-left: 38.03px;
+}
+
+.star .starinner{
+    flex-direction: column;
+}
+
+.star .starinner1,
+.add .starinner1,
+.tproduct .starinner1,
+.today .starinner1,
+.tsale .starinner1
+{    
+    margin-top: 31.04px;
+    margin-left: 19.33px;
+    width: 77px;
+    height: 33px;
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.star .starinner2,
+.add .starinner2,
+.tproduct .starinner2,
+.today .starinner2,
+.tsale .starinner2{
+    margin-top: 0px;
+    margin-left: 19.33px;
+    width: 107px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.graphs{
+    width: 1268px;
+    height: 400px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.flex{
+    display: flex;
+}
+.graphs .hystogram{
+    width: 802px;
+    height: 400px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.hystogram .ghtext1{
+    width: 43px;
+    height: 29px;
+    text-align: left;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+    margin-top: 23.5px;
+    margin-left: 29px;
+}
+
+.hystogram .ghtext2{
+    margin-top: 24.1px;
+    margin-left: 539px;
+    width: 108px;
+    height: 16px;
+    font: normal normal normal 12px/16px Roboto;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+}
+
+.hystogram .ghtext3{
+    margin-top: 24.1px;
+    margin-right: 20.58px;
+    width: 108px;
+    height: 16px;
+    font: normal normal normal 12px/16px Roboto;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+}
+
+.hystogram .ghtext4{
+    margin-top: 24.1px;
+    margin-right: 29.58px;
+    width: 33px;
+    height: 16px;
+    border-bottom:2px solid #C8242F ;
+    font: normal normal normal 12px/16px Roboto;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+
+.graphs .ghg{
+    margin-left: 33.5px;
+    margin-top: 37.98px;
+}
+
+.piechart{
+    margin-left: 30px;
+    width: 385px;
+    height: 398px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.graphs .gpc{
+    margin-left: 89px;
+    margin-top: 27.48px;   
+}
+
+.piechart .pctext1{
+    margin-top: 21.52px;
+    margin-left: 29px;
+    width: 165px;
+    height: 29px;
+    text-align: left;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.piechart .rb{
+    margin-left: 49px;
+    width: 18px;
+    height: 18px;
+    background-color: #C8242F;
+    border-radius: 50%;
+}
+.piechart .gb{
+    margin-left: 26px;
+    width: 18px;
+    height: 18px;
+    background-color: #A2B86C;
+    border-radius: 50%;
+}
+.piechart .ob{
+    margin-top: 20px;
+    margin-left: 49px;
+    width: 18px;
+    height: 18px;
+    background-color: #F16C20;
+    border-radius: 50%;
+}
+.piechart .yb{
+    margin-top: 20px;
+    margin-left: 147px;
+    width: 18px;
+    height: 18px;
+    background-color: #EBC844;
+    border-radius: 50%;
+}
+
+.piechart .pctext2{
+    margin-left: 9px;
+    width: 166px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.piechart .pctext3{
+    margin-left: 9px;
+    width: 51px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.piechart .pctext4{
+    margin-top: 18px;
+    margin-left: 9px;
+    width: 45px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.piechart .pctext5{
+    margin-top: 18px;
+    margin-left: 9px;
+    width: 33px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;    
+}
+
+.data{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 1217px;
+    height: 558px;
+    background-color: white;    
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.dtext1{
+    margin-top:22.5px;
+    margin-left: 29px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.dtext2{
+    margin-top:26.1px;
+    margin-left: 1034px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+
+.maintable{
+    padding: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+  
+th, td{
+    text-align: left;
+    padding: 7.7px;    
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.font1{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #ADADAD;
+    font-family: Roboto;
+}
+
+.font2{
+    font-size: 15px;
+    color: #3E3E3E;
+    font-family: Roboto;
+}
+.maintable .paid{
+    height: 26px;
+    width: 50px;
+    background-color: #EBFFEF;
+    border-radius: 10%;
+    color: #3CDD5F;
+    text-align: center;
+    padding-top: 5px ;
+}
+.maintable .failed{
+    height: 26px;
+    width: 50px;
+    background-color: #FFF5F5;
+    border-radius: 10%;
+    color: #FF4545;
+    text-align: center;
+    padding-top: 5px;
+}
+.maintable .pending{
+    color: #BABABA;
+    text-align: center;
+    padding-top: 5px;
+    height: 26px;
+    width: 60px;
+    background-color: #F8F8F8;
+    border-radius: 10%;
+}
+
+tr:last-child td{
+    border-bottom: 0px;
+}
+
