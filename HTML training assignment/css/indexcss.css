@@ -20,9 +20,8 @@ body{
     border: 20px solid #FFFFFF;
 }
 
-.image1 img{    
-    left: 906px;
-    width: 272px;
+.image1 img{ 
+    width: 272px;   
     height: 58px;
     opacity: 1;
     margin-top: 106px;
@@ -131,4 +130,25 @@ span{
     color: #ADADAD;
     opacity: 1;
 }
+.text7 a{
+        margin-top: 15px;
+    }
 
+@media screen and (max-width: 639px)
+{
+    .main
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .image{
+        margin-right: 60%;
+    }
+    .image img{
+        margin-left: 1%;
+    }
+    .image1{
+        margin-left: -5%;
+    }
+
+}
