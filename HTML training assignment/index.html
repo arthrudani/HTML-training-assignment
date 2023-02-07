@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/indexcss.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  </head>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800;900&family=Questrial&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+</head>
 
-
-  <body>
-    <div class="main">
-
-        <div class="image">
-            <img src="images/hero-image.png">
+<body>
+    <div class="main-container">
+        <div class="Image-container">
+            <img src="./images/hero-image.png" alt="" srcset="">
         </div>
-
-        <div class="image1">
-            <div class="top">
-                <img src="images/logo.svg">
+        <div class="Login-info-container">
+            <div class="company-img-name">
+                <img src="./images/favicon.ico" class="favicon-img" alt="" srcset="">
+                <h1>Company</h1>
             </div>
-
-            <div class="text">
-              <p class="text1">We are <b><span>expert</span></b> in business, marketing, growth, & sales.</p>
+            <p class="desc" >We are <span class="expert" >experts</span> in business, marketing, growth, & sales.</p>
+            <p class="login-instr" >Login into your account</p>
+            <form class="login-form" >
+                <input type="text" class="username" placeholder="Username" ><br />
+                <input type="password" class="password" placeholder="Password" >
+                <div class="login-forgotpass" >
+                    <button type="submit">Login</button>
+                    <p>Forgot Password ?</p>
+                </div>
+            </form>
+            <div class="register-container" >
+                <p style="color: #ADADAD;" >Are you a new Member?</p>
+                <p style="color: #C8242F;margin-left: 0.2rem;" >Register here</p>
             </div>
-
-            <div class="text2">
-              <p>Log into your account.</p>
-            </div>
-            
-            <div class="text3">
-              <input type="text" placeholder="username">  
-            </div>
-
-            <div class="text4">
-              <input type="password" placeholder="password">  
-            </div>
-
-            <div class="text5">
-              <button type="button">Login</button>
-                <a href="google.com" class="text6">Forgot password?</a> 
-            </div>
-
-            <div class="text7">
-              <p class="text8">Are you a new Member?</p>  
-              <a href="youtube.com" class="text8">Register here.</a> 
-            </div>
- 
         </div>
-        
     </div>
-
+</body>
+<script>
     
-  </body>
+</script>
 </html>
