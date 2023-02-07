@@ -1,240 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-    <title>Analysis</title>
-    <link rel="stylesheet" href="css/innerpagecss.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <div class="main">
-        <div class="headerbar">
-            <div class="menubar-icon">
-                <img src="images/menu-bar.svg">
-            </div>
+    <title>InnePage</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/innerPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
 
-            <div class="company-icon">
-                <img src="images/header-logo.svg">
+<body>
+    <div class="navbar-custom">
+        <div class="company__hamburger">
+            <img src="./images/menu-bar.svg" onclick="handleInOut()" style="cursor: pointer;">
+            <img src="./images/header-logo.svg" />
+        </div>
+        <div class="Search-div">
+            <img src="./images/search-icon.svg" alt="" srcset="">
+            <input type="text" placeholder="Search..">
+        </div>
+        <img src="./images/notification-icon.svg" class="mobile-notification-icon" alt="" srcset="">
+        <div class="notification-profile">
+            <img src="./images/notification-icon.svg" alt="" srcset="">
+            <div class="profile">
+                <img src="./images/profile.png" class="profile-pic" alt="" srcset="">
+                <p>John doe</p>
+                <img src="./images/downward-arrow.svg" class="down-arrow" alt="" srcset="">
             </div>
-
-            <div class="search-icon">
-                <img src="images/search-icon.svg">
-            </div>
-
-            <div class="search-text">
-                <p>Search</p>
-            </div>
-
-            <div class="notification-icon">
-                <img src="images/notification-icon.svg">
-            </div>
-
-            <div class="profile-icon">
-                <img src="images/profile.png">
-            </div>
-
-            <div class="unametext">
-                <p>John Doe</p>
-            </div>
-            
-            <div class="downarrow-icon">
-                <img src="images/downward-arrow.svg">
-            </div>
-        </div> 
-        <div class="footer">  
-            <div class="sidebar">
-                <div class="dashboard">
-                    <img src="images/dashboard-default.svg">
+        </div>
+    </div>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-mobile width-0" id="sidebar-2">
+        <div class="absolute-container">
+            <div class="dashboard-options">
+                <div class="search-div-mobile">
+                    <img src="./images/search-icon.svg" alt="">
+                    <input type="text" placeholder="search" name="" id="">
+                </div>
+                <div class="mobile-profile">
+                    <img src="./images/profile.png" alt="" srcset="">
+                    <p>John Doe</p>
+                    <img src="./images/downward-arrow.svg" alt="" srcset="">
+                </div>
+                <div class="dash-option dash-option-active">
+                    <img src="./images/dashboard-active.svg" alt="" srcset="">
                     <p>Dashboard</p>
                 </div>
-
-                <div class="analysis">
-                    <img src="images/graph-active.svg">
+                <div class="dash-option">
+                    <img src="./images/graph-default.svg" alt="" srcset="">
                     <p>Analysis</p>
                 </div>
-
-                <div class="inbox">
-                    <img src="images/inbox-default.svg">
+                <div class="dash-option">
+                    <img src="./images/inbox-default.svg" alt="" srcset="">
                     <p>Inbox</p>
                 </div>
-
-                <div class="history">
-                    <img src="images/clock-default.svg">
+                <div class="dash-option">
+                    <img src="./images/clock-default.svg" alt="" srcset="">
                     <p>History</p>
                 </div>
-
-                <div class="user">
-                    <img src="images/user-default.svg">
-                    <p>User</p>
+                <div class="dash-option">
+                    <img src="./images/user-default.svg" alt="" srcset="">
+                    <p>Users</p>
                 </div>
-
-                <div class="maintainace">
-                    <img src="images/maintenance-default.svg">
-                    <p>Maintaiance</p>
+                <div class="dash-option">
+                    <img src="./images/maintenance-default.svg" alt="" srcset="">
+                    <p>Maintenance</p>
                 </div>
-
-                <div class="setting">
-                    <img src="images/setting-default.svg">
+                <div class="dash-option">
+                    <img src="./images/setting-default.svg" alt="" srcset="">
                     <p>Setting</p>
                 </div>
             </div>
-            <div class="innerpage">
-                <p>Analysis</p>
-                <div class="box">
-                    <div class="atext1">One column</div>
-                    <input type="text" class="atb1" placeholder="    Name">
-                    <div class="atb2">
-                        <select placeholder="    Dropdown">
-                            <option value="" disabled selected hidden>   Dropdown</option>
-                        </select>
-                    </div>
-                    <div class="atb3">
-                        <textarea placeholder="Multiple line"></textarea>
-                    </div>
-                    
-                    <div class="atext2">Two column</div>
-                    <div class="flex">
-                        <input type="text" class="atb4" placeholder="    Name">
-                        <input type="text" class="atb5" placeholder="    johndoe">
-                    </div>
-                    <div class="flex">
-                        <input type="text" class="atb6" placeholder="    Password">
-                        <div class="atb7">
-                            <select placeholder="    Dropdown">
-                                <option value="" disabled selected hidden>   Dropdown</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="atext3">Three column</div>
-                    <div class="flex">
-                        <input type="text" class="atb8" placeholder="    |">
-                        <input type="password" class="atb9" placeholder="    Name">
-                        <input type="text" class="atb10" placeholder="    johndoe">
-                    </div>
-
-                    <div class="atext4">Four column</div>
-                    <div class="flex">
-                        <input type="text" class="atb11" placeholder="    UI designer">
-                        <input type="text" class="atb12" placeholder="    Name">
-                        <input type="text" class="atb13" placeholder="    johndoe">
-                        <div class="atb14">
-                            <select placeholder="    Dropdown">
-                                <option value="" disabled selected hidden>   Select</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="atext5">Enter valid data</div>
-                        <div class="atext6">Enter your full name as per ID</div>
-                    </div>
-
-                    <div class="atext7">Other design elements</div>
-                    <div class="atext8">File Upload</div>
-                    <div class="flex">
-                        <div class="filebox">
-                            <div class="flex">
-                                <img src="images/cloud-upload-icon.svg">
-                                <div class="text">Upload</div>
-                            </div>
-                        </div>
-                        <div class="atext9">No item selected</div>
-                    </div>
-                    
-                    <div class="atext10">Radio button</div>
-                    <div class="flex">
-                        <input type="radio" class="radiobox1">
-                        <label for="option1" class="radiotext">Option 1</label>
-                        <input type="radio" class="radiobox2">
-                        <label for="option2" class="radiotext">Option 2</label> 
-                    </div>
-
-                    <div class="atext11">Check box</div>
-                    <div class="flex">
-                        <input type="checkbox" class="checkbox1">
-                        <label for="option1" class="checkboxtext">Option 1</label>
-                        <input type="checkbox" class="checkbox2">
-                        <label for="option2" class="checkboxtext">Option 2</label>
-                    </div>
-
-                    <div class="atext12">Snackbar</div>
-                    <div class="flex">
-                        <div class="fourbox1">
-                            <div class="flex">
-                                <div>
-                                    <img src="images/error-icon.svg">
-                                </div>
-                                <div class="fourbox1text">
-                                    This is an error message
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fourbox2">
-                            <div class="flex">
-                                <div>
-                                    <img src="images/info-icon.svg">
-                                </div>
-                                <div class="fourbox2text">
-                                    This is an information message!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="fourbox3">
-                            <div class="flex">
-                                <div>
-                                    <img src="images/warning-icon.svg">
-                                </div>
-                                <div class="fourbox3text">
-                                    This is a Warning message!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fourbox4">
-                            <div class="flex">
-                                <div>
-                                    <img src="images/success-icon.svg">
-                                </div>
-                                <div class="fourbox4text">
-                                    This is a Success message!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="atext13">Call to action</div>
-                    <div class="flex">
-                        <div class="atext14">
-                            <button type="button">Primary</button>
-                        </div>
-                        <div class="atext15">
-                            <button type="button">Secondary</button>
-                        </div>
-                    </div>
-
-                    <div class="atext16">Tabs</div>
-                    <div class="flex">
-                        <div class="tab1">Tab 1</div>
-                        <div class="tab2">Tab 2</div>
-                        <div class="tab3">Tab 3</div>
-                    </div>
-                    <div class="flex">
-                        <div class="redul"></div>
-                        <div class="greyul"></div>
-                    </div>
-
-                    <div class="lasttext">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                    </div>
-                </div>
-            </div>            
         </div>
     </div>
-  </body>
+    <div class="sidebar-dashboard">
+        <div class="sidebar sidebar-active" id="sidebar">
+            <div class="dashboard-options">
+                <div class="search-div-mobile">
+                    <img src="./images/search-icon.svg" alt="">
+                    <input type="text" placeholder="search" name="" id="">
+                </div>
+                <div class="mobile-profile">
+                    <img src="./images/profile.png" alt="" srcset="">
+                    <p>John Doe</p>
+                    <img src="./images/downward-arrow.svg" alt="" srcset="">
+                </div>
+                <div class="dash-option">
+                    <img src="./images/dashboard-default.svg" alt="" srcset="">
+                    <p>Dashboard</p>
+                </div>
+                <div class="dash-option dash-option-active">
+                    <img src="./images/graph-active.svg" alt="" srcset="">
+                    <p>Analysis</p>
+                </div>
+                <div class="dash-option">
+                    <img src="./images/inbox-default.svg" alt="" srcset="">
+                    <p>Inbox</p>
+                </div>
+                <div class="dash-option">
+                    <img src="./images/clock-default.svg" alt="" srcset="">
+                    <p>History</p>
+                </div>
+                <div class="dash-option">
+                    <img src="./images/user-default.svg" alt="" srcset="">
+                    <p>Users</p>
+                </div>
+                <div class="dash-option">
+                    <img src="./images/maintenance-default.svg" alt="" srcset="">
+                    <p>Maintenance</p>
+                </div>
+                <div class="dash-option">
+                    <img src="./images/setting-default.svg" alt="" srcset="">
+                    <p>Setting</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-analysis-cont" id="dashboard-main">
+            <h1>Analysis</h1>
+            <div class="form-type-data p-4 fs-5 fo bg-white">
+
+                <!-- One Column -->
+                <p class="m-0">One Column</p>
+                <input type="email" class="form-control p-2 my-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Name">
+                <select class="form-select my-2 p-2" aria-label="Default select example">
+                    <option selected>Dropdown</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <textarea class="form-control my-3" id="exampleFormControlTextarea1" rows="5"
+                    placeholder="Multiple Line"></textarea>
+
+                <!-- Two Column -->
+                <p class="m-0 mt-4">Two Column</p>
+                <div class="row mt-3">
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                        <input type="email" class="form-control p-2" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Name">
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                        <input type="email" class="form-control p-2" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Name">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                        <input type="password" class="form-control p-2" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Password">
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                        <select class="form-select p-2" aria-label="Default select example">
+                            <option selected>Dropdown</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="m-0 mt-4">Three Column</p>
+                <div class="row mt-1">
+                    <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-3">
+                        <input type="text" class="form-control is-invalid" id="validationServer03"
+                            aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                        <!-- <input type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name"> -->
+                    </div>
+                    <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-3">
+                        <input type="password" class="form-control p-2" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Password">
+                    </div>
+                    <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-3">
+                        <input type="email" class="form-control p-2 dis-input" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Name" disabled>
+                    </div>
+                </div>
+                <p class="m-0 mt-4">Four Column</p>
+                <div class="row">
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-12 mt-3">
+                        <input type="text" class="form-control is-invalid" id="validationServer03"
+                            aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            Enter valid Data
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-12 mt-3">
+                        <input type="text" class="form-control" id="validationServer03"
+                            aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="feedback">
+                            Enter valid Data
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-12 mt-3">
+                        <input type="text" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Name">
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-12 mt-3">
+                        <select class="form-select p-2" aria-label="Default select example">
+                            <option selected>Dropdown</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="m-0 mt-4">Other Design Elements</p>
+
+                <!-- File Upload -->
+                <p class="m-0 mt-4 fs-6">File Upload</p>
+                <input type="file" id="custom-file" class="d-none" onchange='uploadFile(this)'>
+                <div class="d-flex align-items-center mt-4">
+                    <button class="Custom-file-btn" id="custom-click"> <img src="./images/cloud-upload-icon.svg" alt=""
+                            srcset="">&nbsp;&nbsp;Upload </button>
+                    <p id="file-name" class="ms-4 fs-6">No file Selected</p>
+                </div>
+
+                <p class="m-0 mt-4 fs-6">Radio Button</p>
+                <div class="py-3 d-flex">
+                    <div>
+                        <input type="radio" name="Check" id="Check-1">
+                        <label for="Check-1">Option-1</label>
+                    </div>
+                    <div class="ms-4">
+                        <input type="radio" name="Check" id="Check-2">
+                        <label for="Check-1">Option-2</label>
+                    </div>
+                </div>
+                <p class="m-0 mt-4 fs-6">Check Box</p>
+                <div class="py-3 d-flex">
+                    <div>
+                        <input type="checkbox" name="Check" id="Check-1">
+                        <label for="Check-1">Option-1</label>
+                    </div>
+                    <div class="ms-4">
+                        <input type="checkbox" name="Check" id="Check-2">
+                        <label for="Check-1">Option-2</label>
+                    </div>
+                </div>
+                <p class="m-0 mt-4 fs-6">Sanckbar</p>
+                <div class="alerts-custom m-1">
+                    <div class="d-flex d-flex align-items-center border border-danger rounded mt-4">
+                        <img src="./images/error-icon.svg" class="" alt="">
+                        <p class="text-danger ms-2 fs-5">This is an error Message</p>
+                    </div>
+                    <div class="d-flex d-flex align-items-center border border-info rounded mt-4">
+                        <img src="./images/info-icon.svg" class="" alt="" srcset="">
+                        <p class="text-info ms-2 fs-5">This is an information Message!</p>
+                    </div>
+                </div>
+                <div class="alerts-custom m-1">
+                    <div class="d-flex d-flex align-items-center border border-warning rounded mt-4">
+                        <img src="./images/warning-icon.svg" class="" alt="">
+                        <p class="text-warning ms-2 fs-5">This is a Warning Message</p>
+                    </div>
+                    <div class="d-flex d-flex align-items-center border border-success rounded mt-4">
+                        <img src="./images/success-icon.svg" class="" alt="" srcset="">
+                        <p class="text-success ms-2 fs-5">This is a Success Message!</p>
+                    </div>
+                </div>
+                <p class="m-0 mt-4 fs-6">Call To Action</p>
+                <button class="btn btn-danger mt-3 cta px-5 py-2">Primary</button>
+                <button class="btn btn-outline-danger second-btn mt-3 cta px-5 py-2">Secondary</button>
+
+                <!-- Tab navigation -->
+                <div>
+                    <div class="tab-links">
+                        <button class="tablink active-tablink" onclick="openCity(event,'tab1')">Tab 1</button>
+                        <button class="tablink" onclick="openCity(event,'tab2')">Tab 2</button>
+                        <button class="tablink" onclick="openCity(event,'tab3')">Tab 3</button>
+                    </div>
+                    <div id="tab1" class="w3-container w3-border tab mt-4">
+                        <h2>Tab 1</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing</p>
+                    </div>
+
+                    <div id="tab2" class="w3-container w3-border tab mt-4" style="display:none">
+                        <h2>Tab 2</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing</p>
+                    </div>
+
+                    <div id="tab3" class="w3-container w3-border tab mt-4" style="display:none">
+                        <h2>Tab 3</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script>
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-tablink", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-tablink";
+    }
+</script>
+<script>
+    let sidebar = document.getElementById("sidebar");
+    let Filebtn = document.getElementById("custom-file");
+    let customBtn = document.getElementById("custom-click");
+    let sidebar2 = document.getElementById("sidebar-2");
+    let dashboardMain = document.getElementById("dashboard-main");
+    function handleInOut() {
+        sidebar.classList.toggle("width-0")
+        sidebar.classList.toggle("sidebar-active")
+        dashboardMain.classList.toggle("width-100")
+        sidebar2.classList.toggle("width-0")
+        sidebar2.classList.toggle("sidebar-active")
+    }
+    customBtn.addEventListener("click", () => {
+        Filebtn.click()
+    })
+    function uploadFile(target) {
+        document.getElementById("file-name").innerHTML = target.files[0].name;
+    }
+</script>
+
 </html>
