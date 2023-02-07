@@ -1,310 +1,164 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa !important;
-  min-height: 100vh;
-  font-family: "Nunito Sans", sans-serif !important;
+  background-color: #fafafa;
+  font-family: "Nunito Sans", sans-serif;
   font-family: "Questrial", sans-serif;
   font-family: "Roboto", sans-serif;
-}
-p {
-  margin-block-start: 1em !important;
-  margin-block-end: 1em !important;
-}
-.sidebar {
-  overflow: hidden;
   min-height: 100vh;
-  /* position: fixed;
-  left: 0;
-  top: 0; */
-  transition: 600ms;
-  z-index: 1;
-  box-shadow: 0px 0px 10px gray;
-  background-color: white;
-}
-.sidebar-dashboard
-{
   display: flex;
-}
-.dashboard-main
-{
-  width: 100%;
-}
-.sidebar-mobile
-{
-  display: none;
-  overflow: hidden;
-  min-height: 110vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  transition: 600ms;
-  z-index: 1;
-  box-shadow: 0px 0px 10px gray;
-  background-color: white;
-}
-.width-0 {
-  width: 0;
-}
-.company__hamburger {
-  display: flex;
-  justify-content: space-between;
-  width: 11rem;
-}
-.sidebar-active {
-  width: 250px;
-}
-.Search-div {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.31);
-  width: 40%;
 }
-.Search-div img {
-  width: 1.2rem;
-}
-.Search-div input {
-  border: none;
-  margin-left: 0.4rem;
-  font-size: 1.1rem;
-}
-.Search-div input:focus {
-  outline: none;
-}
-.notification-profile {
-  display: flex;
-  justify-content: space-between;
-  width: 13rem;
-}
-.profile {
-  display: flex;
-  justify-content: space-between;
-  width: 10rem;
-}
-.navbar-custom {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  padding: 1rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-.sidebar .dashboard-options
-{
-  margin-top: 2rem;
-  /* position: fixed; */
-  margin-top: 0rem;
-  margin-left: 0;
-  width: 230px;
-}
-.sidebar-mobile .dashboard-options
-{
-  margin-top: 6rem;
-}
-.dash-option {
-  display: flex;
-  width: 80%;
+.main-container {
+  width: 85%;
   margin: auto;
-  margin-top: 1rem;
-  padding-left: 0.6rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
-}
-.dash-option:hover {
-  cursor: pointer;
-  background-color: #c8242f3b;
-  color: #c8242f;
-}
-.dash-option-active {
-  background-color: #c8242f3b;
-  color: #c8242f;
-}
-.dash-option img {
-  width: 1.3rem;
-  margin-right: 0.6rem;
-}
-.mobile-notification-icon {
-  display: none;
-}
-.search-div-mobile {
-  display: none;
-}
-.mobile-profile {
-  display: none;
-}
-.main-analysis-cont
-{
-  width: 80%;
-    margin: 1.5rem 2rem;
-}
-.dis-input
-{
-  border: 2px dashed gray !important;
-}
-.alerts-custom
-{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
-.alerts-custom img
-{
-  width: 2rem;
-  margin-left: 1rem;
+.Image-container {
+  width: 40%;
 }
-.alerts-custom div
-{
-  width: 48%;
+.Image-container img {
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0px 4px 31px #0000000a;
+  border: 20px solid #ffffff;
+  width: 90%;
 }
-.cta
+.Login-info-container
 {
-  border-radius: 20px !important;
+    width: 45%;
 }
-/* Tabs */
-.tab-links
-{
-  margin-top: 2rem;
-  border-bottom: 1px solid gray;
+.favicon-img {
+  width: 2.5rem;
 }
-.tab-links button
-{
-  background: transparent;
-  border: none;
-  /* margin-right: 1.5rem; */
-}
-.active-tablink
-{
-  border-bottom: 5px solid #c8242f !important;
-}
-input[type="radio"],input[type="checkbox"]
-{
-  accent-color: red !important;
-}
-.Custom-file-btn
-{
-  background: white;
+.company-img-name {
   display: flex;
   align-items: center;
-  border: 1px solid #c8242f;
-  width: fit-content;
-  padding: 0.5rem 1.5rem;
-  border-radius: 30px;
-  color: #c8242f;
-  font-weight: 500;
 }
-.second-btn
+.company-img-name h1 {
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.desc
 {
-  margin-left: 1rem !important;
+    width: 85%;
+    font-size: 2rem;
+    margin: 0;
+    color: #3E3E3E;
 }
-.width-100
+.expert
 {
-  width: 100%;
+    color: #C8242F;
 }
-@media screen and (max-width: 1240px) {
-  .details-container {
-    flex-wrap: wrap;
-  }
-  .details {
-    width: 15%;
-  }
-  .graph-1 {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .sidebar-mobile
-  {
-    display: block;
-  }
-  .sidebar
-  {
-    display: none;
-  }
-  .dashboard-main
-  {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .details {
-    width: 35%;
-    margin-top: 1rem;
-  }
-  .graphs {
-    flex-direction: column;
-  }
-  .graph-1,
-  .graph-2 {
-    width: 90%;
+.login-instr
+{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #3E3E3E;
     margin-top: 2rem;
-  }
 }
-@media screen and (max-width: 768px)
+.login-form
 {
-  .alerts-custom div
-  {
-    width: 100%;
-  }
+    width: 80%;
 }
-@media screen and (max-width: 700px) {
-  .Search-div {
-    display: none;
-  }
-  .notification-profile {
-    display: none;
-  }
-  .mobile-notification-icon {
-    display: block;
-  }
-  .search-div-mobile {
-    display: block;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid gray;
-  }
-  .search-div-mobile input {
-    border: none;
-    margin-left: 5px;
-    font-size: 1rem;
-  }
-  .search-div-mobile input:focus {
+.login-form input::placeholder
+{
+    color: #ADADAD;
+}
+.login-form input:focus
+{
     outline: none;
-  }
-  .search-div-mobile img {
-    width: 1.2rem;
-  }
-  .mobile-profile {
+}
+.login-form input
+{
+    background: transparent;
+    padding: 1rem;
+    border-radius: 5px;
     width: 80%;
-    margin: auto;
+    border: 1px solid #ADADAD;
+    /* margin-top: 1.5rem; */
+}
+.password
+{
+    margin-top: 2rem;
+}
+.login-forgotpass
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
-  }
+    flex-wrap: wrap;
+    width: 85%;
+    margin-top: 1rem;
 }
-@media screen and (max-width: 550px) {
-  .details {
-    width: 40%;
-  }
-  .second-btn
-  {
-    margin-left: 0 !important;
-  }
+.login-forgotpass button
+{
+    background-color: #C8242F;
+    padding: 0.7rem 1rem;
+    color: white;
+    width: 7rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
 }
-@media screen and (max-width: 420px) {
-  .details {
-    width: 100%;
-  }
-  .second-btn
-  {
-    margin-left: 0 !important;
-  }
-  .main-analysis-cont
-  {
-    width: 80%;
-  }
+.login-forgotpass p
+{
+    color: #ADADAD;
+    cursor: pointer;
+}
+.register-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Responsive Satrts Here */
+@media screen and (max-width : 800px)
+{
+    .main-container
+    {
+        flex-direction: column;
+        margin-top: 3rem;
+    }    
+    .Image-container 
+    {
+        width: 80%;
+    }
+    .Login-info-container
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .company-img-name
+    {
+        justify-content: center;
+    }
+    .desc
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .login-instr
+    {
+        text-align: center;
+    }
+    .login-form
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register-container
+    {
+        justify-content: center;
+    }
+    .password
+    {
+        margin-top: 0.8rem;
+    }
 }
